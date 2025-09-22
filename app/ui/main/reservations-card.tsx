@@ -1,6 +1,5 @@
 'use client'
 import React, { useState } from 'react';
-import CustomSlotsPicker from '@/app/ui/main/datepicker'
 import ReservationModal from '@/app/ui/main/reservations-modal'
 interface FormData {
   name: string;
