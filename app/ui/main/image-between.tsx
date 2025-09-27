@@ -14,7 +14,7 @@ export default function ImageBetween({image} : {image: string}) {
             <div className="absolute inset-0 bg-black/40 z-10"></div>
 
 
-            <div className="translate-x-10 translate-y-5 relative z-20 flex flex-col justify-center items-start h-full px-8 md:px-16 text-white max-w-4xl">
+            <div className="overflow-x-hidden relative z-20 flex flex-col justify-center items-start h-full px-4 md:px-16 text-white max-w-4xl">
               <h1 className="text-4xl md:text-6xl font-bold mb-4">Enjoy our delicious coffee</h1>
               <p className="text-lg md:text-xl mb-6">
                 Discover our selection of espresso, cappuccino, and more.

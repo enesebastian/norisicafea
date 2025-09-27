@@ -3,47 +3,86 @@
 import { useState } from "react";
 import Image from 'next/image'
 import SocialmediaButton from '@/app/ui/main/socialmedia-button'
+import { FaInstagram } from "react-icons/fa6";
+import { AiFillTikTok } from "react-icons/ai";
+import { FaGoogle } from "react-icons/fa";
 
 export default function SocialMediaGrid() {
 
       return (
-          <section id="socialmedia" className="flex items-center bg-white dark:bg-gray-900 min-h-screen py-24">
-              <div className="container mx-auto px-6 py-10">
-                <h1 className="mx-auto h-2 w-78 rounded-lg text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl text-center">Follow us on</h1>
-                <p className="mx-auto mt-4 h-2 w-64 rounded-lg" />
-                <p className="mx-auto mt-4 h-2 w-64 rounded-lg bg-yellow-400 sm:w-80 dark:bg-gray-700" />
+          <section className="py-24 bg-[#fff7ec] w-full min-h-screen overflow-x-hidden border-2 border-red">
+              <div className="mx-2 md:mx-6">
+                <h2 className="text-3xl md:text-4xl font-bold text-center text-brown-900 mb-12 relative inline-block">
+                  Follow us on
+                  <span className="block w-16 h-1 bg-amber-500 mx-auto mt-2 rounded-full" />
+                </h2>
 
-                <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:mt-12 xl:gap-12 items-center">
-
-                    <div className="w-full flex flex-col">
-                      <div className="h-64 rounded-lg relative bg-gray-300 md:h-72 xl:h-140 dark:bg-gray-600">
-                        <Image src="/socialmedia/noriinsta.png" alt="text"
-                               fill
-                               className="object-cover" // cover makes it fill without distortion
-                               ></Image>
-                      </div>
-                      <SocialmediaButton text="View our latest instagram post" href="http://www.google.com"></SocialmediaButton>
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                  {/* Instagram Card */}
+                  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+                    <img src="/socialmedia/noriinsta.png" alt="Instagram Dog" className="w-28 h-28 mb-4" />
+                    <div className="flex items-center gap-2">
+                      <a
+                        href="https://www.instagram.com/norisicafea/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-brown-800 hover:text-blue-400 text-lg font-medium transition"
+                      >
+                    <FaInstagram className="text-2xl font-bold text-brown-800 mb-2"></FaInstagram>
+                    <p>@norisicafea</p>
+                        </a>
                     </div>
+                    <a
+                      href="#"
+                      className="mt-auto bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2 rounded-full transition"
+                    >
+                      View Our Latest Post
+                    </a>
+                  </div>
 
-                    <div className="w-full flex flex-col">
-                      <div className="h-64 w-full rounded-lg relative bg-gray-300 md:h-72 xl:h-140 dark:bg-gray-600">
-                        <Image src="/socialmedia/noritiktok.png" alt="text"
-                               fill
-                               className="object-cover"// cover makes it fill without distortion
-                               ></Image>
-                      </div>
-                      <SocialmediaButton text="View our latest tiktok post" href="http://www.google.com"></SocialmediaButton>
+                  {/* TikTok Card */}
+                  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+                    <img src="/socialmedia/noritiktok.png" alt="Instagram Dog" className="w-28 h-28 mb-4" />
+                    <div className="flex items-center gap-2">
+                      <a
+                        href="https://www.tiktok.com/@norisicafea"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-brown-800 hover:text-blue-400 text-lg font-medium transition"
+                      >
+                    <AiFillTikTok className="text-2xl font-bold text-brown-800 mb-2"></AiFillTikTok>
+                    <p>@norisicafea</p>
+                        </a>
                     </div>
+                    <a
+                      href="#"
+                      className="mt-auto bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2 rounded-full transition"
+                    >
+                      View Our Latest Post
+                    </a>
+                  </div>
 
-                    <div className="w-full flex flex-col">
-                      <div className="h-64 w-full rounded-lg relative bg-gray-300 md:h-72 xl:h-140 dark:bg-gray-600">
-                        <Image src="/socialmedia/norireview.png" alt="text"
-                               fill
-                               className="object-cover" // cover makes it fill without distortion
-                               ></Image>
-                      </div>
-                      <SocialmediaButton text="Leave a review" href="http://www.google.com"></SocialmediaButton>
+                  {/* Review Card */}
+                  <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center">
+                    <img src="/socialmedia/norireview.png" alt="Instagram Dog" className="w-28 h-28 mb-4" />
+                    <div className="flex items-center gap-2">
+                      <a
+                        href="https://www.tiktok.com/@norisicafea"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-2 text-brown-800 hover:text-blue-400 text-lg font-medium transition"
+                      >
+                    <FaGoogle className="text-2xl font-bold text-brown-800 mb-2"></FaGoogle>
+                    <p>NoriSiCafea</p>
+                        </a>
                     </div>
+                    <a
+                      href="#"
+                      className="mt-auto bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2 rounded-full transition"
+                    >
+                      View Our Latest Post
+                    </a>
+                  </div>
 
                 </div>
               </div>
