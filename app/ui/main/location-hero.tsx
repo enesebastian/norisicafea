@@ -1,7 +1,7 @@
 
 
 export default function LocationHero() {
-  let locationString = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.704817326018!2d26.118336576145563!3d44.43921690124061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff31f0e00e07%3A0xd42b6e5faaf430ae!2sStrada%20Traian%20202%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sen!2sro!4v1758976097376!5m2!1sen!2sro";
+  const locationString = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.704817326018!2d26.118336576145563!3d44.43921690124061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff31f0e00e07%3A0xd42b6e5faaf430ae!2sStrada%20Traian%20202%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sen!2sro!4v1758976097376!5m2!1sen!2sro";
   return (
     <>
       <header id="location" className="flex items-center bg-white dark:bg-gray-900 min-h-screen py-24">
