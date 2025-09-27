@@ -8,10 +8,10 @@ export default function Home() {
   return (
     <>
       <Navbar></Navbar>
-      <ImageBetween image="/main/coffee-1.png"></ImageBetween>
+      <ImageBetween image="/main/heroimg.png"></ImageBetween>
       <AboutUs></AboutUs>
       <LocationHero></LocationHero>
-      <ImageBetween image="/main/coffee-2.png"></ImageBetween>
+      {/*<ImageBetween image="/main/coffee-2.png"></ImageBetween> */}
       <ReservationCard></ReservationCard>
       <SocialMediaGrid></SocialMediaGrid>
     </>

@@ -7,7 +7,7 @@ import SocialmediaButton from '@/app/ui/main/socialmedia-button'
 export default function SocialMediaGrid() {
 
       return (
-          <section id="socialmedia" className="flex items-center bg-white dark:bg-gray-900 min-h-screen">
+          <section id="socialmedia" className="flex items-center bg-white dark:bg-gray-900 min-h-screen py-24">
               <div className="container mx-auto px-6 py-10">
                 <h1 className="mx-auto h-2 w-78 rounded-lg text-3xl font-semibold text-gray-800 dark:text-white lg:text-4xl text-center">Follow us on</h1>
                 <p className="mx-auto mt-4 h-2 w-64 rounded-lg" />

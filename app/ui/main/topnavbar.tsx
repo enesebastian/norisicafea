@@ -8,7 +8,7 @@ export default function Navbar() {
       textColor: "#fff",
       links: [
         { label: "How it all started...", ariaLabel: "How it all started...", href: '#aboutus' },
-        { label: "Location", ariaLabel: "Location", href: '#location' }
+        { label: "Where to find us", ariaLabel: "Location", href: '#location' }
       ]
     },
     {
@@ -16,12 +16,12 @@ export default function Navbar() {
       bgColor: "#6C2C25",
       textColor: "#fff",
       links: [
-        { label: "Our store", ariaLabel: "Our store", href: '/our-store' },
-        { label: "In-house menu", ariaLabel: "In-house menu", href: '/menu' }
+        { label: "Take home", ariaLabel: "Our store", href: '/our-store' },
+        { label: "Menu", ariaLabel: "In-house menu", href: '/menu' }
       ]
     },
     {
-      label: "Social media",
+      label: "Check us on",
       bgColor: "#6C2C25",
       textColor: "#fff",
       links: [
@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <CardNav
       logo='/main/logo.png'
-      logoAlt="Company Logo"
+      logoAlt="logonori"
       items={items}
       baseColor="#fff"
       menuColor="#000"

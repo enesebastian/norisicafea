@@ -38,7 +38,7 @@ const ReservationsCard: React.FC = () => {
     };
 
     return (
-      <div className=" min-h-screen flex items-center justify-center ">
+      <div className=" min-h-screen flex items-center justify-center py-24">
         <div className="relative w-full max-w-2xl h-140" style={{ perspective: '1000px' }}>
           <div
             className={`absolute inset-0 w-full h-full transition-transform duration-700`}

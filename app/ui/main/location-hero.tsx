@@ -1,10 +1,10 @@
 
 
 export default function LocationHero() {
-
+  let locationString = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2848.704817326018!2d26.118336576145563!3d44.43921690124061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff31f0e00e07%3A0xd42b6e5faaf430ae!2sStrada%20Traian%20202%2C%20Bucure%C8%99ti%20030167!5e0!3m2!1sen!2sro!4v1758976097376!5m2!1sen!2sro";
   return (
     <>
-      <header id="location" className="flex items-center bg-white dark:bg-gray-900 min-h-screen">
+      <header id="location" className="flex items-center bg-white dark:bg-gray-900 min-h-screen py-24">
 
         <div className="container mx-auto px-6 ">
           <div className="items-center lg:flex">
@@ -19,14 +19,12 @@ export default function LocationHero() {
                   laborum ab amet sunt recusandae? Reiciendis natus perspiciatis optio.
                 </p>
 
-                <button className="w-full px-5 py-2 mt-6 text-sm tracking-wider text-white uppercase transition-colors duration-300 transform bg-orange-400 rounded-lg lg:w-auto hover:bg-yellow-400 focus:outline-none focus:yellow-400">
-                  Visit the menu
-                </button>
+  
               </div>
             </div>
 
             <div className="mt-6 flex w-full items-center justify-center lg:mt-12">
-              <iframe className="border-2 border-gray rounded-2xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2847.7810145289477!2d26.130225476763606!3d44.45816139999732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f8c16953f701%3A0x193759093311304c!2sRose%20Garden%20Residence%20Apartments!5e0!3m2!1sen!2sro!4v1758320339137!5m2!1sen!2sro" width="700" height="550" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe className="border-2 border-gray rounded-2xl" src={locationString} width="700" height="550" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
