@@ -1,5 +1,8 @@
 
 export default function AboutUs () {
+    const paragraphAboutUsText = `Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam
+    mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.`
     return (
         <section id="aboutus" className=" lg:flex lg:justify-center min-h-screen py-24">
             <div className="overflow-hidden bg-white dark:bg-gray-900 lg:mx-8 lg:flex lg:max-w-6xl lg:w-full lg:shadow-md lg:rounded-xl">
@@ -8,9 +11,7 @@ export default function AboutUs () {
                         How it all <span className="text-orange-400">started</span>...
                     </h2>
                     <p className="mt-4 text-gray-500 dark:text-gray-300">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam
-                        mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.
+                        {paragraphAboutUsText}
                     </p>
                 </div>
             </div>

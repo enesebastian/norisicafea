@@ -7,7 +7,7 @@ import ReservationCard from '@/app/ui/main/reservations-card'
 export default function Home() {
   return (
     <>
-      <Navbar></Navbar>
+      
       <ImageBetween image="/main/heroimg.png"></ImageBetween>
       <AboutUs></AboutUs>
       <LocationHero></LocationHero>

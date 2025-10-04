@@ -20,6 +20,7 @@ export default function RootLayout({
          backgroundColor: "#FFFFFF",
        }}
       >
+        <Navbar></Navbar>
         {children}</body>
     </html>
   );
