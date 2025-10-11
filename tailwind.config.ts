@@ -26,11 +26,18 @@ const config: Config = {
         }
       },
       keyframes: {
-        shimmer: {
-          '100%': {
-            transform: 'translateX(100%)',
-          },
-    },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        scaleIn: {
+          '0%': { transform: 'scale(0.8)' },
+          '100%': { transform: 'scale(1)' },
+        },
+      },
+      animation: {
+        fadeIn: 'fadeIn 0.3s ease forwards',
+        scaleIn: 'scaleIn 0.3s ease forwards 0.1s',
       },
     },
   },

@@ -1,9 +1,12 @@
+"use client";
 import Image from 'next/image'
 import ButtonX from '@/app/ui/main/button'
-export default function ImageBetween({image} : {image: string}) {
+import { useTranslation } from "@/contexts/LanguageContext";
 
-  const headerText = "Enjoy our delicious coffee";
-  const paragraphText = "Discover our selection of espresso, cappuccino, and more.";
+export default function ImageBetween({image} : {image: string}) {
+  const {translations} = useTranslation();
+  const headerText = translations.heroTitle;
+  const paragraphText = translations.heroHeader;
     return (
         <section className="relative w-full h-screen">
 
@@ -23,7 +26,7 @@ export default function ImageBetween({image} : {image: string}) {
               <p className="text-lg md:text-xl mb-6">
                 {paragraphText}
               </p>
-              <ButtonX name="View Menu" href="/menu"></ButtonX>
+              <ButtonX name={translations.heroMenu} href="/menu"></ButtonX>
             </div>
           </section>
         );

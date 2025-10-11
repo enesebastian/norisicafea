@@ -6,16 +6,18 @@ import { AiFillTikTok } from "react-icons/ai";
 import { FaGoogle } from "react-icons/fa";
 import SocialmediaButton from './socialmedia-button';
 import Image from "next/image";
+import { useTranslation } from "@/contexts/LanguageContext";
 
 export default function SocialMediaGrid() {
 
-  const CTAText ="Follow us on";
+  const {translations} = useTranslation();
+  const CTAText = translations.followUsOnHeader;
   const instaTag ="@norisicafea";
   const tiktokTag ="@norisicafea";
   const googleName ="NoriSiCafea";
-  const instaLatestText = "View our latest post";
-  const tiktokLatestText = "View our latest post";
-  const googleLatestText = "Leave a review";
+  const instaLatestText = translations.followUsOnViewPost;
+  const tiktokLatestText = translations.followUsOnViewPost;
+  const googleLatestText = translations.followUsOnReview;
 
       return (
           <section className="py-24 bg-[#ffffff] w-full min-h-screen overflow-x-hidden border-2 border-red">

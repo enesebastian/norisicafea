@@ -185,11 +185,6 @@ const CardNav: React.FC<CardNavProps> = ({
                 isHamburgerOpen ? '-translate-y-[4px] -rotate-45' : ''
               } group-hover:opacity-75`}
             />
-            <div
-              className={`hamburger-line w-[30px] h-[2px] bg-current transition-[transform,opacity,margin] duration-300 ease-linear [transform-origin:50%_50%] ${
-                isHamburgerOpen ? 'opacity-0 group-hover:opacity-0' : 'group-hover:opacity-75'
-              } `}
-            />
           </div>
 
           <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
